@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chris' Website</title>
+	<meta name="keywords" content="Chris Tan,Chris,Personal Website, Portfolio,Experience,University of Waterloo,Computer Engineering">
+	<meta name="author" content="Chris Tan">
+	<meta name="description" content="To err is human; but to to really foul things up you need a computer. Here's my attempt.">
+	<!--Bootstrap 4-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+	<!--Bootstrap requires jQuery, Popper.js, and other plugins in order to use Javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+	<!--Font Awesome-->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" integrity="sha384-7Gk1S6elg570RSJJxILsRiq8o0CO99g1zjfOISrqjFUCjxHDn3TmaWoWOqt6eswF" crossorigin="anonymous"></script>
+	
+	<link href="style.css" rel="stylesheet">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-light bg-light navbar-expand-md sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"><img id="signature" src="img/signature.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navResp">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navResp">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#skills">Skills and Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#hobbies">Hobbies</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#blog">Writing and Blog</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!--- Carousel Slider -->
+<div id="slide" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slide" data-slide-to="0" class="active"></li>
+		<li data-target="#slide" data-slide-to="1"></li>
+		<li data-target="#slide" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/carousel/background.jpg">
+			<div class="carousel-caption">
+				<h1 class="display-2">hey, im chris!</h1>
+				<h3>I do web/software development and creative writing on my free time. If you want to read my first poetry collection, it's here:</h3>
+				<a href="ethos_of_the_new_millennia.pdf"><button type="button" class="btn btn-primary btn-large">Ethos of the New Millennia</button></a>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="img/carousel/background2.jpg">
+			<div class="carousel-caption">
+					<h1 class="display-2">taipei is cool.</h1>
+					<h3>Also, is putting my signature online a bad idea?</h3>
+				</div>
+		</div>
+		<div class="carousel-item">
+			<img src="img/carousel/background3.jpg">
+			<div class="carousel-caption">
+					<h1 class="display-2">random pic of not me.</h1>
+					<h3>Literally ran out of pictures to use, so here's my friend (referenced at footer).</h3>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!--- Inquires in Jumbotron -->
+<div class="container-fluid bg-light">
+	<div class="row Jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-xl-10">
+			<p class="lead">Interested in any paid or voluntary software development/web development opportunities. My resume (with personal info redacted) is here. Feel free to <a href="#contact">contact me</a> at any time.</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 text-center">
+			<a href="redacted-resume.pdf"><button type="button" class="btn btn-outline-secondary btn-lg">Resume</button></a>
+		</div>
+	</div>
+</div>
+
+<!--- Skills and Experience -->
+<div class="container-fluid padding" >
+	<div id="skills" class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Skills and Experience</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">I have experience in some basic <span class="font-weight-bold">front-end development</span>, competitive programming, and am currently studying computer engineering at the University of Waterloo.</p>
+		</div>
+	</div>
+</div>
+
+<!--- Software Tools -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-3">
+				<i class="fab fa-java fa-5x"></i>
+				<h3>Java</h3>
+				<p>Over a year of experience in building modular programs, for both practical and competitive programming purposes.</p>
+			</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<i class="fa fa-code"></i>
+			<h3>HTML5 and CSS3</h3>
+			<p>Proficient in building dynamic, well structured websites that are responsive to web dimensions.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<i class="fab fa-bootstrap fa-5x"></i>
+			<h3>Bootstrap</h3>
+			<p>Knowledge and understanding of Bootstrap front-end libraries to focus on mobile-first web development.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<i class="fab fa-js-square fa-5x"></i>
+			<h3>Javascript</h3>
+			<p>Minor experience in Javascript, <span class="font-weight-bold">current language</span> being learned.</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Hobbies -->
+<div class="container-fluid padding">
+	<div id="hobbies" class="row padding">
+		<div class="col-lg-6">
+			<h2>Hobbies</h2>
+			<p>
+				&emsp;I'm a ski instructor for a mountain in Vancouver (I don't know why I'm not naming it since the picture is pretty recognizable, but it's on you I guess).
+			</p>
+			<p>
+				&emsp;I've been skiing for several years now and received my Canadian Ski Instructors' Alliance Level 1 license two years ago. Unfortunately, I won't be back in Vancouver as of the time being.
+			</p>
+			<p>
+				&emsp;Though I'm not very good at sports, I have been going to the gym as a routine for just under a year now. Despite being a skier and using legs, however, I have refused to do leg day until I'm married.
+			</p>
+			<p>
+				&emsp;Just kidding.
+			</p>
+			<p>
+				&emsp;Until I'm dead.
+			</p>
+			<br>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/grouse.jpg" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+
+<!--- Fixed background -->
+<figure>
+		<div class="fixed-wrap">
+			<div id="fixed">
+				
+			</div>
+		</div>
+</figure>
+  
+<!--- Writing and Blog -->
+<div class="container-fluid padding">
+	<div id="blog" class="row welcome">
+		<div class="col-12">
+			<h1 class="display-4 text-center">Writing and Blog</h1>
+		</div>
+		<hr>
+		<div class="col-12 text-center">
+			<p>Here are a couple pieces that I wrote early in the year. Sadly I dropped the habit, but I do intend to re-continue the weekly posts. Trust me, it's all downhill from here.</p>
+		</div>
+	</div>
+</div>
+
+<!--- Writing and Blog Cards -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/blog/mueller.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Tom Mueller: Victory of the Human Spirit</h4>
+					<p class="card-text">The brains behind SpaceX that built rockets in his free time.</p>
+					<a href="tom-mueller.html" class="btn btn-outline-secondary">See Full</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/blog/spiderverse.jpg">
+				<div class="card-body">
+					<h4 class="card-title">The Totally Legitimate, Highly Objective Spiderman: Into the Spiderverse Review</h4>
+					<p class="card-text">1/10. Too many spiders. And men.</p>
+					<a href="satire-spiderverse-review.html" class="btn btn-outline-secondary">See Full</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="img/blog/paint.jpg">
+					<div class="card-body">
+						<h4 class="card-title">Another Coat</h4>
+						<p class="card-text">A poem. January 16th, 2019. Ripped off some image online. Please don't sue me.</p>
+						<a href="one-coat.html" class="btn btn-outline-secondary">See Full</a>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+<!--- Contact -->
+<div id="contact" class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Contact Me</h2>
+			<hr class="light">
+			<p>Shoot me an email for any inquiries whatsoever, both personal or professional.</p>
+		</div>
+		<div class="social col-12 padding">
+			<a href="mailto:chrisinquires@gmail.com"><i class="fas fa-envelope"></i></a>
+			<a href="https://github.com/t-chris"><i class="fab fa-github"></i></a>
+			<a href="https://www.instagram.com/tan.chr/"><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-md-6">
+				<hr class="light">
+				<h5>Quote of the Millennia:</h5>
+				<hr class="light">
+				<p>"To err is human, but to really foul things up you need a computer."</p>
+				<p>- Paul R. Ehrlich</p>
+			</div>
+			<div class="col-md-6">
+				<hr class="light">
+				<h5>Quote of the Eon:</h5>
+				<hr class="light">
+				<p>"Are you zooming in on my forehead?"</p>
+				<p>- big foreheaded friend as I am filming him</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; tanchris.com</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
