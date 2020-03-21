@@ -1,2 +1,1 @@
-# website
-Personal website. Bootstrap.
+old website, new repo is under github.io
